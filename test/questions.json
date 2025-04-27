@@ -1,0 +1,13 @@
+[
+    {
+      "question": "What is the moon's atmosphere made of?",
+      "options": ["Oxygen", "Nitrogen", "Helium", "Nothing"],
+      "answer": "Nothing"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+      "answer": "Mars"
+    }
+  ]
+  
