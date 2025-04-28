@@ -49,7 +49,7 @@ class GameSelection(Screen):
         ]
 
     def start_quiz(self):
-        self.game_manager.set_screen("quiz_game")
+        self.game_manager.set_screen("level_selection")
 
     def start_memory(self):
         self.game_manager.set_screen("memory_game")
@@ -57,6 +57,38 @@ class GameSelection(Screen):
     def draw(self, screen):
         screen.fill(settings.YELLOW)
         title_text = self.font.render("Select a Game", True, settings.BLACK)
+        title_rect = title_text.get_rect(center=(settings.WIDTH // 2, 100))
+        screen.blit(title_text, title_rect)
+        for button in self.buttons:
+            button.draw(screen)
+
+    def update(self):
+        mouse_pos = pygame.mouse.get_pos()
+        for button in self.buttons:
+            button.update(mouse_pos)
+
+    def handle_events(self, event):
+        for button in self.buttons:
+            button.handle_event(event)
+
+class LevelSelection(Screen):
+    def __init__(self, game_manager):
+        super().__init__(game_manager)
+        self.font = pygame.font.Font(None, 48)  # Bigger font for kids
+        self.levels = ["Colours", "Numbers", "Family Members", "Animals", "Routines"]
+        self.buttons = []
+        for i, level in enumerate(self.levels):
+            button_y = settings.HEIGHT // 2 - 100 + i * 70
+            button = Button(level, settings.WIDTH // 2 - 150, button_y, 300, 60, self.font, lambda idx=i: self.start_level(idx))
+            self.buttons.append(button)
+
+    def start_level(self, level_index):
+        self.game_manager.set_quiz_level(level_index)
+        self.game_manager.set_screen("quiz_game")
+
+    def draw(self, screen):
+        screen.fill((255, 204, 255))  # Light pink background to match quiz game
+        title_text = self.font.render("Pick a Level!", True, settings.BLACK)
         title_rect = title_text.get_rect(center=(settings.WIDTH // 2, 100))
         screen.blit(title_text, title_rect)
         for button in self.buttons:

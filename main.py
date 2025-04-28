@@ -1,7 +1,7 @@
 import pygame
 import settings
 from quiz_game import QuizGame
-from screens import MainMenu, GameSelection, MemoryGame, ResultScreen, GameScreen
+from screens import MainMenu, GameSelection, LevelSelection, MemoryGame, ResultScreen, GameScreen
 
 class GameManager:
     def __init__(self):
@@ -9,14 +9,19 @@ class GameManager:
         self.screen = pygame.display.set_mode((settings.WIDTH, settings.HEIGHT))
         pygame.display.set_caption("Mini Games Hub")
         self.clock = pygame.time.Clock()
+        self.quiz_game_instance = QuizGame()
         self.screens = {
             "main_menu": MainMenu(self),
             "game_selection": GameSelection(self),
-            "quiz_game": GameScreen(self, QuizGame()),
+            "level_selection": LevelSelection(self),
+            "quiz_game": GameScreen(self, self.quiz_game_instance),
             "memory_game": MemoryGame(self),
             "result": ResultScreen(self)
         }
         self.current_screen = "main_menu"
+
+    def set_quiz_level(self, level_index):
+        self.quiz_game_instance.set_level(level_index)
 
     def set_screen(self, screen_name, score=None, total=None):
         if screen_name == "quiz_game":
