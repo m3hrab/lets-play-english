@@ -17,20 +17,20 @@ class Screen:
         pass
 
 class MainMenu(Screen):
+    
     def __init__(self, game_manager):
         super().__init__(game_manager)
         self.font = pygame.font.Font(None, settings.FONT_LARGE_SIZE)
-        self.button = Button("Start", settings.WIDTH // 2 - 100, settings.HEIGHT // 2, 200, 60, self.font, self.start_game)
-
+        self.button = Button("Start", settings.WIDTH // 2 - 100, settings.HEIGHT // 2 + 62, 200, 64, self.font, self.start_game)
+        self.bg = pygame.image.load("assets/1.png").convert()
+        self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
+        self.bg_rect = self.bg.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
+        
     def start_game(self):
         self.game_manager.set_screen("game_selection")
 
     def draw(self, screen):
-        screen.fill(settings.YELLOW)
-        title_text = self.font.render("Mini Games Hub", True, settings.BLACK)
-        title_rect = title_text.get_rect(center=(settings.WIDTH // 2, 100))
-        screen.blit(title_text, title_rect)
-        self.button.draw(screen)
+        screen.blit(self.bg, self.bg_rect)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()
@@ -40,12 +40,16 @@ class MainMenu(Screen):
         self.button.handle_event(event)
 
 class GameSelection(Screen):
+    
     def __init__(self, game_manager):
         super().__init__(game_manager)
+        self.bg = pygame.image.load("assets/2.png").convert()
+        self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
+        self.bg_rect = self.bg.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
         self.font = pygame.font.Font(None, settings.FONT_MEDIUM_SIZE)
         self.buttons = [
-            Button("Quiz Game", settings.WIDTH // 2 - 150, settings.HEIGHT // 2 - 50, 300, 60, self.font, self.start_quiz),
-            Button("Memory Game", settings.WIDTH // 2 - 150, settings.HEIGHT // 2 + 50, 300, 60, self.font, self.start_memory)
+            Button("Quiz Game", settings.WIDTH // 2 - 135, settings.HEIGHT // 2 - 67, 268, 60, self.font, self.start_quiz),
+            Button("Memory Game", settings.WIDTH // 2 - 135, settings.HEIGHT // 2 + 7, 268, 60, self.font, self.start_memory)
         ]
 
     def start_quiz(self):
@@ -55,12 +59,7 @@ class GameSelection(Screen):
         self.game_manager.set_screen("memory_game")
 
     def draw(self, screen):
-        screen.fill(settings.YELLOW)
-        title_text = self.font.render("Select a Game", True, settings.BLACK)
-        title_rect = title_text.get_rect(center=(settings.WIDTH // 2, 100))
-        screen.blit(title_text, title_rect)
-        for button in self.buttons:
-            button.draw(screen)
+        screen.blit(self.bg, self.bg_rect)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()
