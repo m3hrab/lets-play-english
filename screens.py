@@ -121,11 +121,13 @@ class MemoryGame(Screen):
 class ResultScreen(Screen):
     def __init__(self, game_manager):
         super().__init__(game_manager)
-        self.font_large = pygame.font.Font(None, settings.FONT_LARGE_SIZE)
-        self.font_medium = pygame.font.Font(None, settings.FONT_MEDIUM_SIZE)
+        self.font_large = pygame.font.Font("assets/font/PlaypenSans-Bold.ttf", settings.FONT_LARGE_SIZE)
+        self.font_medium = pygame.font.Font("assets/font/PlaypenSans-SemiBold.ttf", settings.FONT_MEDIUM_SIZE)
         self.score = 0
         self.total = 0
-        self.button = Button("Back to Menu", settings.WIDTH // 2 - 150, settings.HEIGHT // 2 + 50, 300, 60, self.font_medium, self.back_to_menu)
+        self.button = Button("Main Menu", settings.WIDTH // 2 - 130, settings.HEIGHT // 2 + 40, 260, 60, self.font_medium, self.back_to_menu)
+        self.bg = pygame.image.load("assets/5.png").convert()
+        self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
 
     def back_to_menu(self):
         self.game_manager.set_screen("main_menu")
@@ -135,14 +137,14 @@ class ResultScreen(Screen):
         self.total = total
 
     def draw(self, screen):
-        screen.fill(settings.YELLOW)
-        game_over_text = self.font_large.render("Game Over!", True, settings.BLACK)
-        score_text = self.font_medium.render(f"Your Score: {self.score}/{self.total}", True, settings.BLACK)
+        screen.blit(self.bg, (0, 0))
+        game_over_text = self.font_large.render("Level Completed", True, settings.HEADER_COLOR)
+        score_text = self.font_medium.render(f"Your Score: {self.score}/{self.total}", True, settings.HEADER_COLOR)
         game_over_rect = game_over_text.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2 - 50))
         score_rect = score_text.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
         screen.blit(game_over_text, game_over_rect)
         screen.blit(score_text, score_rect)
-        self.button.draw(screen)
+        # self.button.draw(screen)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()
