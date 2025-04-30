@@ -6,3 +6,29 @@ quizz with 5levels (colours , Numbers , family members , animals and routines ) 
 
 
 Refference Picture will addeed later.
+
+      {
+        "name": "Colours",
+        "questions": [
+          {"question": "What colour is the sun?", "options": ["Blue", "Yellow", "Green", "Red"], "correct_answer": "Yellow", "image_path": "assets/quiz/colours/sun.jpg"},
+          {"question": "What colour is a strawberry?", "options": ["Red", "Purple", "Orange", "Brown"], "correct_answer": "Red", "image_path": "assets/quiz/colours/strawberry.jpg"},
+          {"question": "What colour is the sky on a sunny day?", "options": ["Green", "Blue", "Pink", "Yellow"], "correct_answer": "Blue", "image_path": "assets/quiz/colours/sky.jpg"},
+          {"question": "What colour is a banana?", "options": ["Purple", "Yellow", "Red", "Green"], "correct_answer": "Yellow", "image_path": "assets/quiz/colours/banana.jpg"},
+          {"question": "What colour is a lime?", "options": ["Green", "Blue", "Orange", "Pink"], "correct_answer": "Green", "image_path": "assets/quiz/colours/lime.jpg"},
+          {"question": "What colour is an orange?", "options": ["Red", "Orange", "Purple", "Blue"], "correct_answer": "Orange", "image_path": "assets/quiz/colours/orange.jpg"},
+          {"question": "What colour is a grape?", "options": ["Yellow", "Purple", "Pink", "Orange"], "correct_answer": "Purple", "image_path": "assets/quiz/colours/grape.jpg"},
+          {"question": "What colour is snow?", "options": ["White", "Black", "Red", "Green"], "correct_answer": "White", "image_path": "assets/quiz/colours/snow.jpg"},
+          {"question": "What colour is a lemon?", "options": ["Blue", "Yellow", "Pink", "Purple"], "correct_answer": "Yellow", "image_path": "assets/quiz/colours/lemon.jpg"},
+          {"question": "What colour is a flamingo?", "options": ["Pink", "Green", "Blue", "Yellow"], "correct_answer": "Pink", "image_path": "assets/quiz/colours/flamingo.jpg"},
+          {"question": "What colour is a blueberry?", "options": ["Red", "Blue", "Green", "Yellow"], "correct_answer": "Blue", "image_path": "assets/quiz/colours/blueberry.jpg"},
+          {"question": "What colour is a cherry?", "options": ["Red", "Purple", "Orange", "Green"], "correct_answer": "Red", "image_path": "assets/quiz/colours/cherry.jpg"},
+          {"question": "What colour is a frog?", "options": ["Green", "Pink", "Blue", "Yellow"], "correct_answer": "Green", "image_path": "assets/quiz/colours/frog.jpg"},
+          {"question": "What colour is a carrot?", "options": ["Orange", "Purple", "Blue", "Green"], "correct_answer": "Orange", "image_path": "assets/quiz/colours/carrot.jpg"},
+          {"question": "What colour is chocolate?", "options": ["Brown", "White", "Red", "Blue"], "correct_answer": "Brown", "image_path": "assets/quiz/colours/chocolate.jpg"},
+          {"question": "What colour is a zebra?", "options": ["Black and White", "Red and Blue", "Green and Yellow", "Pink and Purple"], "correct_answer": "Black and White", "image_path": "assets/quiz/colours/zebra.jpg"},
+          {"question": "What colour is a tomato?", "options": ["Red", "Yellow", "Green", "Blue"], "correct_answer": "Red", "image_path": "assets/quiz/colours/tomato.jpg"},
+          {"question": "What colour is a cucumber?", "options": ["Green", "Red", "Purple", "Yellow"], "correct_answer": "Green", "image_path": "assets/quiz/colours/cucumber.jpg"},
+          {"question": "What colour is a raven?", "options": ["Black", "White", "Blue", "Green"], "correct_answer": "Black", "image_path": "assets/quiz/colours/raven.jpg"},
+          {"question": "What colour is a peach?", "options": ["Orange", "Blue", "Green", "Purple"], "correct_answer": "Orange", "image_path": "assets/quiz/colours/peach.jpg"}
+        ]
+      },

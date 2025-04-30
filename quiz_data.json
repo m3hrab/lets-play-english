@@ -1,130 +1,129 @@
 {
-    "levels": [
-      {
-        "name": "Colours",
-        "questions": [
-          {"question": "What colour is the sun?", "options": ["Blue", "Yellow", "Green", "Red"], "correct_answer": "Yellow", "image_path": "sun.png"},
-          {"question": "What colour is a strawberry?", "options": ["Red", "Purple", "Orange", "Brown"], "correct_answer": "Red", "image_path": null},
-          {"question": "What colour is the sky on a sunny day?", "options": ["Green", "Blue", "Pink", "Yellow"], "correct_answer": "Blue", "image_path": "sky.png"},
-          {"question": "What colour is a banana?", "options": ["Purple", "Yellow", "Red", "Green"], "correct_answer": "Yellow", "image_path": null},
-          {"question": "What colour is a lime?", "options": ["Green", "Blue", "Orange", "Pink"], "correct_answer": "Green", "image_path": "lime.png"},
-          {"question": "What colour is an orange?", "options": ["Red", "Orange", "Purple", "Blue"], "correct_answer": "Orange", "image_path": null},
-          {"question": "What colour is a grape?", "options": ["Yellow", "Purple", "Pink", "Orange"], "correct_answer": "Purple", "image_path": "grape.png"},
-          {"question": "What colour is snow?", "options": ["White", "Black", "Red", "Green"], "correct_answer": "White", "image_path": null},
-          {"question": "What colour is a lemon?", "options": ["Blue", "Yellow", "Pink", "Purple"], "correct_answer": "Yellow", "image_path": "lemon.png"},
-          {"question": "What colour is a flamingo?", "options": ["Pink", "Green", "Blue", "Yellow"], "correct_answer": "Pink", "image_path": "flamingo.png"},
-          {"question": "What colour is a blueberry?", "options": ["Red", "Blue", "Green", "Yellow"], "correct_answer": "Blue", "image_path": null},
-          {"question": "What colour is a cherry?", "options": ["Red", "Purple", "Orange", "Green"], "correct_answer": "Red", "image_path": "cherry.png"},
-          {"question": "What colour is a frog?", "options": ["Green", "Pink", "Blue", "Yellow"], "correct_answer": "Green", "image_path": null},
-          {"question": "What colour is a carrot?", "options": ["Orange", "Purple", "Blue", "Green"], "correct_answer": "Orange", "image_path": "carrot.png"},
-          {"question": "What colour is chocolate?", "options": ["Brown", "White", "Red", "Blue"], "correct_answer": "Brown", "image_path": null},
-          {"question": "What colour is a zebra?", "options": ["Black and White", "Red and Blue", "Green and Yellow", "Pink and Purple"], "correct_answer": "Black and White", "image_path": "zebra.png"},
-          {"question": "What colour is a tomato?", "options": ["Red", "Yellow", "Green", "Blue"], "correct_answer": "Red", "image_path": null},
-          {"question": "What colour is a cucumber?", "options": ["Green", "Red", "Purple", "Yellow"], "correct_answer": "Green", "image_path": "cucumber.png"},
-          {"question": "What colour is a raven?", "options": ["Black", "White", "Blue", "Green"], "correct_answer": "Black", "image_path": null},
-          {"question": "What colour is a peach?", "options": ["Orange", "Blue", "Green", "Purple"], "correct_answer": "Orange", "image_path": "peach.png"}
-        ]
-      },
-      
-      {
-        "name": "Numbers",
-        "questions": [
-          {"question": "How many fingers are on one hand?", "options": ["Four", "Five", "Six", "Seven"], "correct_answer": "Five", "image_path": "hand.png"},
-          {"question": "What comes after 3?", "options": ["2", "4", "5", "6"], "correct_answer": "4", "image_path": null},
-          {"question": "How many sides does a triangle have?", "options": ["Three", "Four", "Five", "Six"], "correct_answer": "Three", "image_path": "triangle.png"},
-          {"question": "What is 2 + 2?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
-          {"question": "How many legs does a spider have?", "options": ["Six", "Eight", "Ten", "Four"], "correct_answer": "Eight", "image_path": "spider.png"},
-          {"question": "What comes before 5?", "options": ["3", "4", "6", "7"], "correct_answer": "4", "image_path": null},
-          {"question": "How many wheels does a bicycle have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": "bicycle.png"},
-          {"question": "What is 5 - 1?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
-          {"question": "How many days are in a week?", "options": ["Five", "Six", "Seven", "Eight"], "correct_answer": "Seven", "image_path": "calendar.png"},
-          {"question": "How many eyes do you have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": null},
-          {"question": "What comes after 8?", "options": ["7", "9", "10", "11"], "correct_answer": "9", "image_path": null},
-          {"question": "How many legs does a dog have?", "options": ["Two", "Three", "Four", "Five"], "correct_answer": "Four", "image_path": "dog.png"},
-          {"question": "What is 3 + 1?", "options": ["2", "3", "4", "5"], "correct_answer": "4", "image_path": null},
-          {"question": "How many sides does a square have?", "options": ["Three", "Four", "Five", "Six"], "correct_answer": "Four", "image_path": "square.png"},
-          {"question": "What comes before 10?", "options": ["8", "9", "11", "12"], "correct_answer": "9", "image_path": null},
-          {"question": "How many ears do you have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": null},
-          {"question": "What is 6 - 2?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
-          {"question": "How many legs does a bird have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": "bird.png"},
-          {"question": "What comes after 1?", "options": ["0", "2", "3", "4"], "correct_answer": "2", "image_path": null},
-          {"question": "How many sides does a pentagon have?", "options": ["Four", "Five", "Six", "Seven"], "correct_answer": "Five", "image_path": "pentagon.png"}
-        ]
-      },
-      {
-        "name": "Family Members",
-        "questions": [
-          {"question": "Who is your mum's husband?", "options": ["Dad", "Brother", "Uncle", "Grandpa"], "correct_answer": "Dad", "image_path": "dad.png"},
-          {"question": "Who is your dad's mum?", "options": ["Grandma", "Sister", "Aunt", "Mum"], "correct_answer": "Grandma", "image_path": null},
-          {"question": "What do you call your mum's son?", "options": ["Brother", "Dad", "Uncle", "Grandpa"], "correct_answer": "Brother", "image_path": "brother.png"},
-          {"question": "Who is your mum's sister?", "options": ["Aunt", "Grandma", "Mum", "Sister"], "correct_answer": "Aunt", "image_path": null},
-          {"question": "Who is your dad's dad?", "options": ["Grandpa", "Brother", "Uncle", "Dad"], "correct_answer": "Grandpa", "image_path": "grandpa.png"},
-          {"question": "What do you call your dad's daughter?", "options": ["Sister", "Mum", "Aunt", "Grandma"], "correct_answer": "Sister", "image_path": null},
-          {"question": "Who is your mum's mum?", "options": ["Grandma", "Aunt", "Sister", "Mum"], "correct_answer": "Grandma", "image_path": "grandma.png"},
-          {"question": "Who is your dad's brother?", "options": ["Uncle", "Dad", "Grandpa", "Brother"], "correct_answer": "Uncle", "image_path": null},
-          {"question": "What do you call your mum's child?", "options": ["Brother", "Sister", "Dad", "Grandpa"], "correct_answer": "Brother", "image_path": "brother.png"},
-          {"question": "Who is your grandma's husband?", "options": ["Grandpa", "Dad", "Uncle", "Brother"], "correct_answer": "Grandpa", "image_path": null},
-          {"question": "Who is your mum's daughter?", "options": ["Sister", "Aunt", "Grandma", "Mum"], "correct_answer": "Sister", "image_path": "sister.png"},
-          {"question": "Who is your grandpa's wife?", "options": ["Grandma", "Mum", "Aunt", "Sister"], "correct_answer": "Grandma", "image_path": null},
-          {"question": "What do you call your dad's son?", "options": ["Brother", "Dad", "Uncle", "Grandpa"], "correct_answer": "Brother", "image_path": "brother.png"},
-          {"question": "Who is your mum's brother?", "options": ["Uncle", "Dad", "Grandpa", "Brother"], "correct_answer": "Uncle", "image_path": null},
-          {"question": "Who is your sister's mum?", "options": ["Mum", "Aunt", "Grandma", "Sister"], "correct_answer": "Mum", "image_path": "mum.png"},
-          {"question": "Who is your brother's dad?", "options": ["Dad", "Uncle", "Grandpa", "Brother"], "correct_answer": "Dad", "image_path": null},
-          {"question": "What do you call your uncle's sister?", "options": ["Aunt", "Mum", "Grandma", "Sister"], "correct_answer": "Aunt", "image_path": "aunt.png"},
-          {"question": "Who is your dad's wife?", "options": ["Mum", "Aunt", "Grandma", "Sister"], "correct_answer": "Mum", "image_path": null},
-          {"question": "Who is your mum's dad?", "options": ["Grandpa", "Dad", "Uncle", "Brother"], "correct_answer": "Grandpa", "image_path": "grandpa.png"},
-          {"question": "What do you call your grandma's daughter?", "options": ["Mum", "Aunt", "Sister", "Grandma"], "correct_answer": "Mum", "image_path": null}
-        ]
-      },
-      {
-        "name": "Animals",
-        "questions": [
-          {"question": "What animal says 'Woof'?", "options": ["Cat", "Dog", "Bird", "Fish"], "correct_answer": "Dog", "image_path": "dog.png"},
-          {"question": "What animal says 'Meow'?", "options": ["Dog", "Cat", "Rabbit", "Horse"], "correct_answer": "Cat", "image_path": null},
-          {"question": "Which animal lives in the sea and has eight legs?", "options": ["Octopus", "Shark", "Dolphin", "Whale"], "correct_answer": "Octopus", "image_path": "octopus.png"},
-          {"question": "Which animal is the tallest?", "options": ["Elephant", "Giraffe", "Lion", "Bear"], "correct_answer": "Giraffe", "image_path": null},
-          {"question": "What animal is black and white and lives in China?", "options": ["Zebra", "Panda", "Penguin", "Tiger"], "correct_answer": "Panda", "image_path": "panda.png"},
-          {"question": "Which animal can fly?", "options": ["Dog", "Cat", "Bird", "Fish"], "correct_answer": "Bird", "image_path": null},
-          {"question": "What animal is known for its long trunk?", "options": ["Elephant", "Giraffe", "Lion", "Monkey"], "correct_answer": "Elephant", "image_path": "elephant.png"},
-          {"question": "Which animal says 'Moo'?", "options": ["Horse", "Cow", "Sheep", "Pig"], "correct_answer": "Cow", "image_path": null},
-          {"question": "What animal is small and hops?", "options": ["Rabbit", "Mouse", "Squirrel", "Hamster"], "correct_answer": "Rabbit", "image_path": "rabbit.png"},
-          {"question": "Which animal is the king of the jungle?", "options": ["Tiger", "Lion", "Bear", "Wolf"], "correct_answer": "Lion", "image_path": null},
-          {"question": "What animal lives in water and has fins?", "options": ["Fish", "Crocodile", "Turtle", "Snake"], "correct_answer": "Fish", "image_path": "fish.png"},
-          {"question": "Which animal has a long neck and spots?", "options": ["Giraffe", "Elephant", "Zebra", "Cheetah"], "correct_answer": "Giraffe", "image_path": null},
-          {"question": "What animal says 'Oink'?", "options": ["Cow", "Pig", "Sheep", "Horse"], "correct_answer": "Pig", "image_path": "pig.png"},
-          {"question": "Which animal is black and white with stripes?", "options": ["Panda", "Zebra", "Penguin", "Dalmatian"], "correct_answer": "Zebra", "image_path": null},
-          {"question": "What animal is slow and lives on land?", "options": ["Turtle", "Rabbit", "Fox", "Deer"], "correct_answer": "Turtle", "image_path": "turtle.png"},
-          {"question": "Which animal says 'Neigh'?", "options": ["Horse", "Cow", "Sheep", "Pig"], "correct_answer": "Horse", "image_path": null},
-          {"question": "What animal is small and has a bushy tail?", "options": ["Squirrel", "Mouse", "Hamster", "Rat"], "correct_answer": "Squirrel", "image_path": "squirrel.png"},
-          {"question": "Which animal has a big mane?", "options": ["Lion", "Tiger", "Bear", "Wolf"], "correct_answer": "Lion", "image_path": null},
-          {"question": "What animal lives in the Arctic and is white?", "options": ["Polar Bear", "Penguin", "Seal", "Walrus"], "correct_answer": "Polar Bear", "image_path": "polar_bear.png"},
-          {"question": "Which animal swings from trees?", "options": ["Monkey", "Sloth", "Koala", "Bear"], "correct_answer": "Monkey", "image_path": null}
-        ]
-      },
-      {
-        "name": "Routines",
-        "questions": [
-          {"question": "What do you do in the morning to clean your teeth?", "options": ["Eat breakfast", "Brush teeth", "Go to school", "Play"], "correct_answer": "Brush teeth", "image_path": "brush_teeth.png"},
-          {"question": "What do you do before going to bed?", "options": ["Eat lunch", "Sleep", "Play games", "Go to school"], "correct_answer": "Sleep", "image_path": null},
-          {"question": "What do you do at school?", "options": ["Sleep", "Learn", "Eat dinner", "Play all day"], "correct_answer": "Learn", "image_path": "school.png"},
-          {"question": "What do you eat in the morning?", "options": ["Dinner", "Breakfast", "Lunch", "Snack"], "correct_answer": "Breakfast", "image_path": null},
-          {"question": "What do you do to clean your hands before eating?", "options": ["Wash hands", "Play", "Read a book", "Sleep"], "correct_answer": "Wash hands", "image_path": "wash_hands.png"},
-          {"question": "What do you do after school?", "options": ["Go to bed", "Do homework", "Eat breakfast", "Go to school"], "correct_answer": "Do homework", "image_path": null},
-          {"question": "What do you eat at midday?", "options": ["Breakfast", "Lunch", "Dinner", "Snack"], "correct_answer": "Lunch", "image_path": "lunch.png"},
-          {"question": "What do you do to get ready for school?", "options": ["Sleep", "Play", "Get dressed", "Eat dinner"], "correct_answer": "Get dressed", "image_path": null},
-          {"question": "What do you do in the evening with your family?", "options": ["Eat dinner", "Go to school", "Brush teeth", "Play outside"], "correct_answer": "Eat dinner", "image_path": "dinner.png"},
-          {"question": "What do you do to keep your room tidy?", "options": ["Play", "Clean up", "Sleep", "Eat"], "correct_answer": "Clean up", "image_path": null},
-          {"question": "What do you do in the morning after waking up?", "options": ["Go to bed", "Make bed", "Eat dinner", "Play"], "correct_answer": "Make bed", "image_path": "make_bed.png"},
-          {"question": "What do you do to stay healthy?", "options": ["Play all day", "Eat candy", "Exercise", "Sleep all day"], "correct_answer": "Exercise", "image_path": null},
-          {"question": "What do you do at night before sleeping?", "options": ["Eat breakfast", "Read a book", "Go to school", "Play outside"], "correct_answer": "Read a book", "image_path": "read_book.png"},
-          {"question": "What do you do to get to school?", "options": ["Sleep", "Walk", "Eat lunch", "Play"], "correct_answer": "Walk", "image_path": null},
-          {"question": "What do you eat after lunch?", "options": ["Breakfast", "Dinner", "Snack", "Lunch"], "correct_answer": "Snack", "image_path": "snack.png"},
-          {"question": "What do you do to relax after homework?", "options": ["Play", "Sleep", "Go to school", "Eat breakfast"], "correct_answer": "Play", "image_path": null},
-          {"question": "What do you do in the morning to get clean?", "options": ["Take a bath", "Play", "Sleep", "Eat"], "correct_answer": "Take a bath", "image_path": "bath.png"},
-          {"question": "What do you do to help at home?", "options": ["Play", "Set the table", "Sleep", "Go to school"], "correct_answer": "Set the table", "image_path": null},
-          {"question": "What do you do after dinner?", "options": ["Eat breakfast", "Watch TV", "Go to school", "Play outside"], "correct_answer": "Watch TV", "image_path": "watch_tv.png"},
-          {"question": "What do you do to stay warm before bed?", "options": ["Put on pajamas", "Play outside", "Eat lunch", "Go to school"], "correct_answer": "Put on pajamas", "image_path": null}
-        ]
-      }
-    ]
-  }
+  "levels": [
+    {
+      "name": "Colours",
+      "questions": [
+        {"question": "What colour is the sun?", "options": ["Blue", "Yellow", "Green", "Red"], "correct_answer": "Yellow", "image_path": "assets/quiz/colours/sun.jpg"},
+        {"question": "What colour is a strawberry?", "options": ["Red", "Purple", "Orange", "Brown"], "correct_answer": "Red", "image_path": "assets/quiz/colours/strawberry.jpg"},
+        {"question": "What colour is the sky on a sunny day?", "options": ["Green", "Blue", "Pink", "Yellow"], "correct_answer": "Blue", "image_path": "assets/quiz/colours/sky.jpg"},
+        {"question": "What colour is a banana?", "options": ["Purple", "Yellow", "Red", "Green"], "correct_answer": "Yellow", "image_path": "assets/quiz/colours/banana.jpg"},
+        {"question": "What colour is a lime?", "options": ["Green", "Blue", "Orange", "Pink"], "correct_answer": "Green", "image_path": "assets/quiz/colours/lime.jpg"},
+        {"question": "What colour is an orange?", "options": ["Red", "Orange", "Purple", "Blue"], "correct_answer": "Orange", "image_path": "assets/quiz/colours/orange.jpg"},
+        {"question": "What colour is a grape?", "options": ["Yellow", "Purple", "Pink", "Orange"], "correct_answer": "Purple", "image_path": "assets/quiz/colours/grape.jpg"},
+        {"question": "What colour is snow?", "options": ["White", "Black", "Red", "Green"], "correct_answer": "White", "image_path": "assets/quiz/colours/snow.jpg"},
+        {"question": "What colour is a lemon?", "options": ["Blue", "Yellow", "Pink", "Purple"], "correct_answer": "Yellow", "image_path": "assets/quiz/colours/lemon.jpg"},
+        {"question": "What colour is a flamingo?", "options": ["Pink", "Green", "Blue", "Yellow"], "correct_answer": "Pink", "image_path": "assets/quiz/colours/flamingo.jpg"},
+        {"question": "What colour is a blueberry?", "options": ["Red", "Blue", "Green", "Yellow"], "correct_answer": "Blue", "image_path": "assets/quiz/colours/blueberry.jpg"},
+        {"question": "What colour is a cherry?", "options": ["Red", "Purple", "Orange", "Green"], "correct_answer": "Red", "image_path": "assets/quiz/colours/cherry.jpg"},
+        {"question": "What colour is a frog?", "options": ["Green", "Pink", "Blue", "Yellow"], "correct_answer": "Green", "image_path": "assets/animals/frog.jpg"},
+        {"question": "What colour is a carrot?", "options": ["Orange", "Purple", "Blue", "Green"], "correct_answer": "Orange", "image_path": "assets/quiz/colours/carrot.jpg"},
+        {"question": "What colour is chocolate?", "options": ["Brown", "White", "Red", "Blue"], "correct_answer": "Brown", "image_path": "assets/quiz/colours/chocolate.jpg"},
+        {"question": "What colour is a zebra?", "options": ["Black and White", "Red and Blue", "Green and Yellow", "Pink and Purple"], "correct_answer": "Black and White", "image_path": "assets/quiz/colours/zebra.jpg"},
+        {"question": "What colour is a tomato?", "options": ["Red", "Yellow", "Green", "Blue"], "correct_answer": "Red", "image_path": "assets/quiz/colours/tomato.jpg"},
+        {"question": "What colour is a cucumber?", "options": ["Green", "Red", "Purple", "Yellow"], "correct_answer": "Green", "image_path": "assets/quiz/colours/cucumber.jpg"},
+        {"question": "What colour is a raven?", "options": ["Black", "White", "Blue", "Green"], "correct_answer": "Black", "image_path": "assets/quiz/colours/raven.jpg"},
+        {"question": "What colour is a peach?", "options": ["Orange", "Blue", "Green", "Purple"], "correct_answer": "Orange", "image_path": "assets/quiz/colours/peach.jpg"}
+      ]
+    },
+    {
+      "name": "Numbers",
+      "questions": [
+        {"question": "How many fingers are on one hand?", "options": ["Four", "Five", "Six", "Seven"], "correct_answer": "Five", "image_path": null},
+        {"question": "What comes after 3?", "options": ["2", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+        {"question": "How many sides does a triangle have?", "options": ["Three", "Four", "Five", "Six"], "correct_answer": "Three", "image_path": null},
+        {"question": "What is 2 + 2?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+        {"question": "How many legs does a spider have?", "options": ["Six", "Eight", "Ten", "Four"], "correct_answer": "Eight", "image_path": null},
+        {"question": "What comes before 5?", "options": ["3", "4", "6", "7"], "correct_answer": "4", "image_path": null},
+        {"question": "How many wheels does a bicycle have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": null},
+        {"question": "What is 5 - 1?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+        {"question": "How many days are in a week?", "options": ["Five", "Six", "Seven", "Eight"], "correct_answer": "Seven", "image_path": null},
+        {"question": "How many eyes do you have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": null},
+        {"question": "What comes after 8?", "options": ["7", "9", "10", "11"], "correct_answer": "9", "image_path": null},
+        {"question": "How many legs does a dog have?", "options": ["Two", "Three", "Four", "Five"], "correct_answer": "Four", "image_path": null},
+        {"question": "What is 3 + 1?", "options": ["2", "3", "4", "5"], "correct_answer": "4", "image_path": null},
+        {"question": "How many sides does a square have?", "options": ["Three", "Four", "Five", "Six"], "correct_answer": "Four", "image_path": null},
+        {"question": "What comes before 10?", "options": ["8", "9", "11", "12"], "correct_answer": "9", "image_path": null},
+        {"question": "How many ears do you have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": null},
+        {"question": "What is 6 - 2?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+        {"question": "How many legs does a bird have?", "options": ["One", "Two", "Three", "Four"], "correct_answer": "Two", "image_path": null},
+        {"question": "What comes after 1?", "options": ["0", "2", "3", "4"], "correct_answer": "2", "image_path": null},
+        {"question": "How many sides does a pentagon have?", "options": ["Four", "Five", "Six", "Seven"], "correct_answer": "Five", "image_path": null}
+      ]
+    },
+    {
+      "name": "Family Members",
+      "questions": [
+        {"question": "Who is your mum's husband?", "options": ["Dad", "Brother", "Uncle", "Grandpa"], "correct_answer": "Dad", "image_path": null},
+        {"question": "Who is your dad's mum?", "options": ["Grandma", "Sister", "Aunt", "Mum"], "correct_answer": "Grandma", "image_path": null},
+        {"question": "What do you call your mum's son?", "options": ["Brother", "Dad", "Uncle", "Grandpa"], "correct_answer": "Brother", "image_path": null},
+        {"question": "Who is your mum's sister?", "options": ["Aunt", "Grandma", "Mum", "Sister"], "correct_answer": "Aunt", "image_path": null},
+        {"question": "Who is your dad's dad?", "options": ["Grandpa", "Brother", "Uncle", "Dad"], "correct_answer": "Grandpa", "image_path": null},
+        {"question": "What do you call your dad's daughter?", "options": ["Sister", "Mum", "Aunt", "Grandma"], "correct_answer": "Sister", "image_path": null},
+        {"question": "Who is your mum's mum?", "options": ["Grandma", "Aunt", "Sister", "Mum"], "correct_answer": "Grandma", "image_path": null},
+        {"question": "Who is your dad's brother?", "options": ["Uncle", "Dad", "Grandpa", "Brother"], "correct_answer": "Uncle", "image_path": null},
+        {"question": "What do you call your mum's child?", "options": ["Brother", "Sister", "Dad", "Grandpa"], "correct_answer": "Brother", "image_path": null},
+        {"question": "Who is your grandma's husband?", "options": ["Grandpa", "Dad", "Uncle", "Brother"], "correct_answer": "Grandpa", "image_path": null},
+        {"question": "Who is your mum's daughter?", "options": ["Sister", "Aunt", "Grandma", "Mum"], "correct_answer": "Sister", "image_path": null},
+        {"question": "Who is your grandpa's wife?", "options": ["Grandma", "Mum", "Aunt", "Sister"], "correct_answer": "Grandma", "image_path": null},
+        {"question": "What do you call your dad's son?", "options": ["Brother", "Dad", "Uncle", "Grandpa"], "correct_answer": "Brother", "image_path": null},
+        {"question": "Who is your mum's brother?", "options": ["Uncle", "Dad", "Grandpa", "Brother"], "correct_answer": "Uncle", "image_path": null},
+        {"question": "Who is your sister's mum?", "options": ["Mum", "Aunt", "Grandma", "Sister"], "correct_answer": "Mum", "image_path": null},
+        {"question": "Who is your brother's dad?", "options": ["Dad", "Uncle", "Grandpa", "Brother"], "correct_answer": "Dad", "image_path": null},
+        {"question": "What do you call your uncle's sister?", "options": ["Aunt", "Mum", "Grandma", "Sister"], "correct_answer": "Aunt", "image_path": null},
+        {"question": "Who is your dad's wife?", "options": ["Mum", "Aunt", "Grandma", "Sister"], "correct_answer": "Mum", "image_path": null},
+        {"question": "Who is your mum's dad?", "options": ["Grandpa", "Dad", "Uncle", "Brother"], "correct_answer": "Grandpa", "image_path": null},
+        {"question": "What do you call your grandma's daughter?", "options": ["Mum", "Aunt", "Sister", "Grandma"], "correct_answer": "Mum", "image_path": null}
+      ]
+    },
+    {
+      "name": "Animals",
+      "questions": [
+        {"question": "What animal says 'Woof'?", "options": ["Cat", "Dog", "Bird", "Fish"], "correct_answer": "Dog", "image_path": null},
+        {"question": "What animal says 'Meow'?", "options": ["Dog", "Cat", "Rabbit", "Horse"], "correct_answer": "Cat", "image_path": null},
+        {"question": "Which animal lives in the sea and has eight legs?", "options": ["Octopus", "Shark", "Dolphin", "Whale"], "correct_answer": "Octopus", "image_path": null},
+        {"question": "Which animal is the tallest?", "options": ["Elephant", "Giraffe", "Lion", "Bear"], "correct_answer": "Giraffe", "image_path": null},
+        {"question": "What animal is black and white and lives in China?", "options": ["Zebra", "Panda", "Penguin", "Tiger"], "correct_answer": "Panda", "image_path": null},
+        {"question": "Which animal can fly?", "options": ["Dog", "Cat", "Bird", "Fish"], "correct_answer": "Bird", "image_path": null},
+        {"question": "What animal is known for its long trunk?", "options": ["Elephant", "Giraffe", "Lion", "Monkey"], "correct_answer": "Elephant", "image_path": null},
+        {"question": "Which animal says 'Moo'?", "options": ["Horse", "Cow", "Sheep", "Pig"], "correct_answer": "Cow", "image_path": null},
+        {"question": "What animal is small and hops?", "options": ["Rabbit", "Mouse", "Squirrel", "Hamster"], "correct_answer": "Rabbit", "image_path": null},
+        {"question": "Which animal is the king of the jungle?", "options": ["Tiger", "Lion", "Bear", "Wolf"], "correct_answer": "Lion", "image_path": null},
+        {"question": "What animal lives in water and has fins?", "options": ["Fish", "Crocodile", "Turtle", "Snake"], "correct_answer": "Fish", "image_path": null},
+        {"question": "Which animal has a long neck and spots?", "options": ["Giraffe", "Elephant", "Zebra", "Cheetah"], "correct_answer": "Giraffe", "image_path": null},
+        {"question": "What animal says 'Oink'?", "options": ["Cow", "Pig", "Sheep", "Horse"], "correct_answer": "Pig", "image_path": null},
+        {"question": "Which animal is black and white with stripes?", "options": ["Panda", "Zebra", "Penguin", "Dalmatian"], "correct_answer": "Zebra", "image_path": null},
+        {"question": "What animal is slow and lives on land?", "options": ["Turtle", "Rabbit", "Fox", "Deer"], "correct_answer": "Turtle", "image_path": null},
+        {"question": "Which animal says 'Neigh'?", "options": ["Horse", "Cow", "Sheep", "Pig"], "correct_answer": "Horse", "image_path": null},
+        {"question": "What animal is small and has a bushy tail?", "options": ["Squirrel", "Mouse", "Hamster", "Rat"], "correct_answer": "Squirrel", "image_path": null},
+        {"question": "Which animal has a big mane?", "options": ["Lion", "Tiger", "Bear", "Wolf"], "correct_answer": "Lion", "image_path": null},
+        {"question": "What animal lives in the Arctic and is white?", "options": ["Polar Bear", "Penguin", "Seal", "Walrus"], "correct_answer": "Polar Bear", "image_path": null},
+        {"question": "Which animal swings from trees?", "options": ["Monkey", "Sloth", "Koala", "Bear"], "correct_answer": "Monkey", "image_path": null}
+      ]
+    },
+    {
+      "name": "Routines",
+      "questions": [
+        {"question": "What do you do in the morning to clean your teeth?", "options": ["Eat breakfast", "Brush teeth", "Go to school", "Play"], "correct_answer": "Brush teeth", "image_path": null},
+        {"question": "What do you do before going to bed?", "options": ["Eat lunch", "Sleep", "Play games", "Go to school"], "correct_answer": "Sleep", "image_path": null},
+        {"question": "What do you do at school?", "options": ["Sleep", "Learn", "Eat dinner", "Play all day"], "correct_answer": "Learn", "image_path": null},
+        {"question": "What do you eat in the morning?", "options": ["Dinner", "Breakfast", "Lunch", "Snack"], "correct_answer": "Breakfast", "image_path": null},
+        {"question": "What do you do to clean your hands before eating?", "options": ["Wash hands", "Play", "Read a book", "Sleep"], "correct_answer": "Wash hands", "image_path": null},
+        {"question": "What do you do after school?", "options": ["Go to bed", "Do homework", "Eat breakfast", "Go to school"], "correct_answer": "Do homework", "image_path": null},
+        {"question": "What do you eat at midday?", "options": ["Breakfast", "Lunch", "Dinner", "Snack"], "correct_answer": "Lunch", "image_path": null},
+        {"question": "What do you do to get ready for school?", "options": ["Sleep", "Play", "Get dressed", "Eat dinner"], "correct_answer": "Get dressed", "image_path": null},
+        {"question": "What do you do in the evening with your family?", "options": ["Eat dinner", "Go to school", "Brush teeth", "Play outside"], "correct_answer": "Eat dinner", "image_path": null},
+        {"question": "What do you do to keep your room tidy?", "options": ["Play", "Clean up", "Sleep", "Eat"], "correct_answer": "Clean up", "image_path": null},
+        {"question": "What do you do in the morning after waking up?", "options": ["Go to bed", "Make bed", "Eat dinner", "Play"], "correct_answer": "Make bed", "image_path": null},
+        {"question": "What do you do to stay healthy?", "options": ["Play all day", "Eat candy", "Exercise", "Sleep all day"], "correct_answer": "Exercise", "image_path": null},
+        {"question": "What do you do at night before sleeping?", "options": ["Eat breakfast", "Read a book", "Go to school", "Play outside"], "correct_answer": "Read a book", "image_path": null},
+        {"question": "What do you do to get to school?", "options": ["Sleep", "Walk", "Eat lunch", "Play"], "correct_answer": "Walk", "image_path": null},
+        {"question": "What do you eat after lunch?", "options": ["Breakfast", "Dinner", "Snack", "Lunch"], "correct_answer": "Snack", "image_path": null},
+        {"question": "What do you do to relax after homework?", "options": ["Play", "Sleep", "Go to school", "Eat breakfast"], "correct_answer": "Play", "image_path": null},
+        {"question": "What do you do in the morning to get clean?", "options": ["Take a bath", "Play", "Sleep", "Eat"], "correct_answer": "Take a bath", "image_path": null},
+        {"question": "What do you do to help at home?", "options": ["Play", "Set the table", "Sleep", "Go to school"], "correct_answer": "Set the table", "image_path": null},
+        {"question": "What do you do after dinner?", "options": ["Eat breakfast", "Watch TV", "Go to school", "Play outside"], "correct_answer": "Watch TV", "image_path": null},
+        {"question": "What do you do to stay warm before bed?", "options": ["Put on pajamas", "Play outside", "Eat lunch", "Go to school"], "correct_answer": "Put on pajamas", "image_path": null}
+      ]
+    }
+  ]
+}

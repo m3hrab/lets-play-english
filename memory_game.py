@@ -158,6 +158,12 @@ class MemoryGame:
             if self.feedback:
                 feedback_rect = pygame.Rect(settings.WIDTH // 2 - 150, settings.HEIGHT - 100, 300, 60)
                 feedback_color = self.MATCH_COLOR if "Great job" in self.feedback else self.FLIP_COLOR
+                if feedback_color == self.MATCH_COLOR:
+                    # play correct sound
+                    settings.CORRECT_SOUND.play()
+                else:
+                    # play incorrect sound
+                    settings.WRONG_SOUND.play()
                 pygame.draw.rect(screen, feedback_color, feedback_rect, border_radius=10)
                 pygame.draw.rect(screen, settings.WHITE, feedback_rect.inflate(-5, -5), border_radius=10)
                 feedback_text = self.font_small.render(self.feedback, True, settings.BLACK)

@@ -25,7 +25,7 @@ class QuizGame:
         self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
 
         # Game variables
-        self.current_level = 0  # Default level, will be set by set_level
+        self.current_level = 0 
         self.levels = self.quiz_data["levels"]
         self.initialize_level()
 
@@ -75,8 +75,8 @@ class QuizGame:
         return lines
 
     def draw(self, screen):
-        screen.blit(self.bg, (0, 0))  # Draw the background image
-        
+        screen.blit(self.bg, (0, 0))  
+
         # Draw header with level name
         header_text = self.font_large.render(f"Level: {self.levels[self.current_level]['name']}", True, settings.HEADER_COLOR)
         header_rect = header_text.get_rect(center=(settings.WIDTH // 2, 50))
@@ -105,12 +105,23 @@ class QuizGame:
                 question_rect = question_text.get_rect(topleft=(question_box.left + 40, question_box.top + 40 + i * 30))
                 screen.blit(question_text, question_rect)
 
-            # Display image placeholder if the question has an image
+            # Display image placeholder if the question has an actual image
             if has_image:
                 image_rect = pygame.Rect(65, 187, 205, 205)
-                pygame.draw.rect(screen, settings.GRAY, image_rect, border_radius=10)
-                image_label = self.font_small.render("Refference Picture", True, settings.BLACK)
-                screen.blit(image_label, image_label.get_rect(center=image_rect.center))
+                
+                try:
+                    image = pygame.image.load(self.questions[self.current_question]["image_path"]).convert_alpha()
+                    image = pygame.transform.scale(image, (image_rect.width, image_rect.height))
+                    screen.blit(image, image_rect)
+                except FileNotFoundError:
+                    pygame.draw.rect(screen, settings.GRAY, image_rect, border_radius=10)
+                    image_label = self.font_small.render("Image Not Found", True, settings.BLACK)
+                    screen.blit(image_label, image_label.get_rect(center=image_rect.center))
+                    print(f"Image not found: {self.questions[self.current_question]['image_path']}")
+                # image_rect = pygame.Rect(65, 187, 205, 205)
+                # pygame.draw.rect(screen, settings.GRAY, image_rect, border_radius=10)
+                # image_label = self.font_small.render("Refference Picture", True, settings.BLACK)
+                # screen.blit(image_label, image_label.get_rect(center=image_rect.center))
 
             # Display options inside the question card with wrapping
             self.option_rects = []
@@ -196,7 +207,7 @@ class QuizGame:
                 self.current_question += 1
                 if self.current_question >= len(self.questions):
                     self.level_complete = True
-                    self.game_over = True  # End the game after the selected level
+                    self.game_over = True  
 
     def get_score(self):
         return self.score
@@ -208,7 +219,6 @@ class QuizGame:
         return self.game_over
 
     def reset(self):
-        # Reset the game state but do not change current_level
         self.initialize_level()
 
     def set_level(self, level_index):
