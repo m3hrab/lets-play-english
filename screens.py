@@ -2,6 +2,7 @@ import pygame
 import settings
 from button import Button
 from quiz_game import QuizGame
+from memory_game import MemoryGame
 
 class Screen:
     def __init__(self, game_manager):
@@ -17,7 +18,6 @@ class Screen:
         pass
 
 class MainMenu(Screen):
-    
     def __init__(self, game_manager):
         super().__init__(game_manager)
         self.font = pygame.font.Font(None, settings.FONT_LARGE_SIZE)
@@ -31,6 +31,7 @@ class MainMenu(Screen):
 
     def draw(self, screen):
         screen.blit(self.bg, self.bg_rect)
+        # self.button.draw(screen)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()
@@ -40,7 +41,6 @@ class MainMenu(Screen):
         self.button.handle_event(event)
 
 class GameSelection(Screen):
-    
     def __init__(self, game_manager):
         super().__init__(game_manager)
         self.bg = pygame.image.load("assets/2.png").convert()
@@ -56,10 +56,12 @@ class GameSelection(Screen):
         self.game_manager.set_screen("level_selection")
 
     def start_memory(self):
-        self.game_manager.set_screen("memory_game")
+        self.game_manager.set_screen("memory_level_selection")
 
     def draw(self, screen):
         screen.blit(self.bg, self.bg_rect)
+        # for button in self.buttons:
+        #     button.draw(screen)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()
@@ -90,6 +92,8 @@ class LevelSelection(Screen):
 
     def draw(self, screen):
         screen.blit(self.bg, self.bg_rect)
+        # for button in self.buttons:
+        #     button.draw(screen)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()
@@ -100,23 +104,59 @@ class LevelSelection(Screen):
         for button in self.buttons:
             button.handle_event(event)
 
-class MemoryGame(Screen):
+class MemoryLevelSelection(Screen):
     def __init__(self, game_manager):
         super().__init__(game_manager)
-        self.font = pygame.font.Font(None, settings.FONT_MEDIUM_SIZE)
+        self.font = pygame.font.Font(None, 48)  # Bigger font for kids
+        self.levels = ["Food", "Colors", "Animals"]
+        self.buttons = []
+        for i, level in enumerate(self.levels):
+            button_y = settings.HEIGHT // 2 - 100 + i * 70
+            button = Button(level, settings.WIDTH // 2 - 130, button_y, 260, 60, self.font, lambda idx=i: self.start_level(idx))
+            self.buttons.append(button)
+        self.bg = pygame.image.load("assets/7.png").convert()  
+        self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
+        self.bg_rect = self.bg.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
+
+    def start_level(self, level_index):
+        self.game_manager.set_memory_level(level_index)
+        self.game_manager.set_screen("memory_game")
 
     def draw(self, screen):
-        screen.fill(settings.YELLOW)
-        placeholder_text = self.font.render("Memory Game (Not Implemented)", True, settings.BLACK)
-        placeholder_rect = placeholder_text.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
-        screen.blit(placeholder_text, placeholder_rect)
+        screen.blit(self.bg, self.bg_rect)
+        # for button in self.buttons:
+        #     button.draw(screen)
 
     def update(self):
-        # Placeholder: immediately end the game for now
-        self.game_manager.set_screen("result", score=0, total=0)
+        mouse_pos = pygame.mouse.get_pos()
+        for button in self.buttons:
+            button.update(mouse_pos)
 
     def handle_events(self, event):
-        pass
+        for button in self.buttons:
+            button.handle_event(event)
+
+class MemoryGameScreen(Screen):
+    def __init__(self, game_manager):
+        super().__init__(game_manager)
+        self.game_instance = MemoryGame()
+        self.bg = pygame.image.load("assets/6.png").convert()
+        self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
+        self.bg_rect = self.bg.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
+
+    def draw(self, screen):
+        screen.blit(self.bg, self.bg_rect)
+        self.game_instance.draw(screen)
+
+    def update(self):
+        self.game_instance.update()
+        if self.game_instance.is_game_over():
+            score = self.game_instance.get_score()
+            total = self.game_instance.get_total_questions()
+            self.game_manager.set_screen("result", score=score, total=total)
+
+    def handle_events(self, event):
+        self.game_instance.handle_events(event)
 
 class ResultScreen(Screen):
     def __init__(self, game_manager):
@@ -144,7 +184,6 @@ class ResultScreen(Screen):
         score_rect = score_text.get_rect(center=(settings.WIDTH // 2, settings.HEIGHT // 2))
         screen.blit(game_over_text, game_over_rect)
         screen.blit(score_text, score_rect)
-        # self.button.draw(screen)
 
     def update(self):
         mouse_pos = pygame.mouse.get_pos()

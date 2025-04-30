@@ -4,8 +4,9 @@ import random
 import json
 
 class QuizGame:
+    
     def __init__(self):
-        # Load quiz_data.json from file
+        # Load quiz_data.json 
         try:
             with open('quiz_data.json', 'r') as f:
                 self.quiz_data = json.load(f)
@@ -15,14 +16,11 @@ class QuizGame:
             raise ValueError("quiz_data.json is not a valid JSON file.")
 
         # Custom Fonts 
-        # use assets/font/PlaypenSans-Regular.ttf
         self.font_large = pygame.font.Font("assets/font/PlaypenSans-Bold.ttf", settings.FONT_LARGE_SIZE)
         self.font_medium = pygame.font.Font("assets/font/PlaypenSans-SemiBold.ttf", settings.FONT_MEDIUM_SIZE)
         self.font_small = pygame.font.Font("assets/font/PlaypenSans-Regular.ttf", settings.FONT_SMALL_SIZE)
 
-
-
-        
+        # Load background image
         self.bg = pygame.image.load("assets/4.png").convert()
         self.bg = pygame.transform.scale(self.bg, (settings.WIDTH, settings.HEIGHT))
 

@@ -1,5 +1,5 @@
 import pygame
-# Window settings
+# Screen Settings settings
 WIDTH = 960
 HEIGHT = 540
 FPS = 60
@@ -19,6 +19,7 @@ QUESTION_COLOR = "#000000"
 HOVER_COLOR = "#f7b0cd"
 CORRECT_COLOR = (102, 255, 102)     
 WRONG_COLOR = (255, 102, 102)       
+SUBTITLE_COLOR = RED#"#3b82c6"
 
 # Font sizes 
 FONT_LARGE_SIZE = 36
@@ -26,7 +27,7 @@ FONT_MEDIUM_SIZE = 24
 FONT_SMALL_SIZE = 18
 
 # Game constants
-FEEDBACK_DURATION = 60  # 2 seconds at 60 FPS
+FEEDBACK_DURATION = 30  # 2 seconds at 60 FPS
 
 # Sound 
 SOUND_ON = True

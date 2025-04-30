@@ -1,0 +1,55 @@
+{
+    "levels": [
+      {
+        "name": "Food",
+        "items": [
+          {"name": "Apple", "color": [255, 99, 71], "image_path": "assets/food/apple.jpg"},
+          {"name": "Banana", "color": [255, 255, 102], "image_path": "assets/food/banana.jpg"},
+          {"name": "Carrot", "color": [255, 140, 0], "image_path": "assets/food/carrot.jpg"},
+          {"name": "Pizza", "color": [255, 218, 185], "image_path": "assets/food/pizza.jpg"},
+          {"name": "Ice Cream", "color": [255, 239, 213], "image_path": "assets/food/ice_cream.jpg"},
+          {"name": "Grape", "color": [147, 112, 219], "image_path": "assets/food/grape.jpg"},
+          {"name": "Strawberry", "color": [255, 105, 180], "image_path": "assets/food/strawberry.jpg"},
+          {"name": "Orange", "color": [255, 165, 0], "image_path": "assets/food/orange.jpg"},
+          {"name": "Burger", "color": [210, 180, 140], "image_path": "assets/food/burger.jpg"},
+          {"name": "Cake", "color": [255, 192, 203], "image_path": "assets/food/cake.jpg"},
+          {"name": "Watermelon", "color": [255, 99, 71], "image_path": "assets/food/watermelon.jpg"},
+          {"name": "Pineapple", "color": [255, 215, 0], "image_path": "assets/food/pineapple.jpg"}
+        ]
+      },
+      {
+        "name": "Colors",
+        "items": [
+          {"name": "Red", "color": [255, 0, 0], "image_path": null},
+          {"name": "Blue", "color": [0, 0, 255], "image_path": null},
+          {"name": "Green", "color": [0, 255, 0], "image_path": null},
+          {"name": "Yellow", "color": [255, 255, 0], "image_path": null},
+          {"name": "Purple", "color": [128, 0, 128], "image_path": null},
+          {"name": "Orange", "color": [255, 165, 0], "image_path": null},
+          {"name": "Pink", "color": [255, 192, 203], "image_path": null},
+          {"name": "Brown", "color": [139, 69, 19], "image_path": null},
+          {"name": "Gray", "color": [169, 169, 169], "image_path": null},
+          {"name": "Cyan", "color": [0, 255, 255], "image_path": null},
+          {"name": "Magenta", "color": [255, 0, 255], "image_path": null},
+          {"name": "Lime", "color": [50, 205, 50], "image_path": null}
+        ]
+      },
+      {
+        "name": "Animals",
+        "items": [
+          {"name": "Dog", "color": [139, 69, 19], "image_path": "assets/animals/dog.jpg"},
+          {"name": "Cat", "color": [169, 169, 169], "image_path": "assets/animals/cat.jpg"},
+          {"name": "Bird", "color": [255, 215, 0], "image_path": "assets/animals/bird.jpg"},
+          {"name": "Fish", "color": [0, 191, 255], "image_path": "assets/animals/fish.jpg"},
+          {"name": "Rabbit", "color": [245, 245, 220], "image_path": "assets/animals/rabbit.jpg"},
+          {"name": "Lion", "color": [218, 165, 32], "image_path": "assets/animals/lion.jpg"},
+          {"name": "Elephant", "color": [128, 128, 128], "image_path": "assets/animals/elephant.jpg"},
+          {"name": "Giraffe", "color": [210, 180, 140], "image_path": "assets/animals/giraffe.jpg"},
+          {"name": "Tiger", "color": [255, 140, 0], "image_path": "assets/animals/tiger.jpg"},
+          {"name": "Bear", "color": [139, 69, 19], "image_path": "assets/animals/bear.jpg"},
+          {"name": "Monkey", "color": [160, 82, 45], "image_path": "assets/animals/monkey.jpg"},
+          {"name": "Zebra", "color": [200, 200, 200], "image_path": "assets/animals/zebra.jpg"}
+        ]
+      }
+    ]
+  }

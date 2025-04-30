@@ -25,6 +25,7 @@
           {"question": "What colour is a peach?", "options": ["Orange", "Blue", "Green", "Purple"], "correct_answer": "Orange", "image_path": "peach.png"}
         ]
       },
+      
       {
         "name": "Numbers",
         "questions": [
