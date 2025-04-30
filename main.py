@@ -16,7 +16,7 @@ class GameManager:
             "main_menu": MainMenu(self),
             "game_selection": GameSelection(self),
             "level_selection": LevelSelection(self),
-            "memory_level_selection": MemoryLevelSelection(self),  # Added this line
+            "memory_level_selection": MemoryLevelSelection(self),  
             "quiz_game": GameScreen(self, self.quiz_game_instance),
             "memory_game": MemoryGameScreen(self),
             "result": ResultScreen(self)

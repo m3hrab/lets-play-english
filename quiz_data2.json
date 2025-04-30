@@ -1,0 +1,129 @@
+{
+    "levels": [
+      {
+        "name": "Colours",
+        "questions": [
+          {"question": "Qual é a cor do sol?", "options": ["Azul", "Amarelo", "Verde", "Vermelho"], "correct_answer": "Amarelo", "image_path": "assets/quiz/colours/sun.jpg"},
+          {"question": "Qual é a cor de um morango?", "options": ["Vermelho", "Roxo", "Laranja", "Marrom"], "correct_answer": "Vermelho", "image_path": "assets/quiz/colours/strawberry.jpg"},
+          {"question": "Qual é a cor do céu em um dia ensolarado?", "options": ["Verde", "Azul", "Rosa", "Amarelo"], "correct_answer": "Azul", "image_path": "assets/quiz/colours/sky.jpg"},
+          {"question": "Qual é a cor de uma banana?", "options": ["Roxo", "Amarelo", "Vermelho", "Verde"], "correct_answer": "Amarelo", "image_path": "assets/quiz/colours/banana.jpg"},
+          {"question": "Qual é a cor de uma lima?", "options": ["Verde", "Azul", "Laranja", "Rosa"], "correct_answer": "Verde", "image_path": "assets/quiz/colours/lime.jpg"},
+          {"question": "Qual é a cor de uma laranja?", "options": ["Vermelho", "Laranja", "Roxo", "Azul"], "correct_answer": "Laranja", "image_path": "assets/quiz/colours/orange.jpg"},
+          {"question": "Qual é a cor de uma uva?", "options": ["Amarelo", "Roxo", "Rosa", "Laranja"], "correct_answer": "Roxo", "image_path": "assets/quiz/colours/grape.jpg"},
+          {"question": "Qual é a cor da neve?", "options": ["Branco", "Preto", "Vermelho", "Verde"], "correct_answer": "Branco", "image_path": "assets/quiz/colours/snow.jpg"},
+          {"question": "Qual é a cor de um limão?", "options": ["Azul", "Amarelo", "Rosa", "Roxo"], "correct_answer": "Amarelo", "image_path": "assets/quiz/colours/lemon.jpg"},
+          {"question": "Qual é a cor de um flamingo?", "options": ["Rosa", "Verde", "Azul", "Amarelo"], "correct_answer": "Rosa", "image_path": "assets/quiz/colours/flamingo.jpg"},
+          {"question": "Qual é a cor de uma blueberry?", "options": ["Vermelho", "Azul", "Verde", "Amarelo"], "correct_answer": "Azul", "image_path": "assets/quiz/colours/blueberry.jpg"},
+          {"question": "Qual é a cor de uma cereja?", "options": ["Vermelho", "Roxo", "Laranja", "Verde"], "correct_answer": "Vermelho", "image_path": "assets/quiz/colours/cherry.jpg"},
+          {"question": "Qual é a cor de um sapo?", "options": ["Verde", "Rosa", "Azul", "Amarelo"], "correct_answer": "Verde", "image_path": "assets/animals/frog.jpg"},
+          {"question": "Qual é a cor de uma cenoura?", "options": ["Laranja", "Roxo", "Azul", "Verde"], "correct_answer": "Laranja", "image_path": "assets/quiz/colours/carrot.jpg"},
+          {"question": "Qual é a cor do chocolate?", "options": ["Marrom", "Branco", "Vermelho", "Azul"], "correct_answer": "Marrom", "image_path": "assets/quiz/colours/chocolate.jpg"},
+          {"question": "Qual é a cor de uma zebra?", "options": ["Preto e Branco", "Vermelho e Azul", "Verde e Amarelo", "Rosa e Roxo"], "correct_answer": "Preto e Branco", "image_path": "assets/quiz/colours/zebra.jpg"},
+          {"question": "Qual é a cor de um tomate?", "options": ["Vermelho", "Amarelo", "Verde", "Azul"], "correct_answer": "Vermelho", "image_path": "assets/quiz/colours/tomato.jpg"},
+          {"question": "Qual é a cor de um pepino?", "options": ["Verde", "Vermelho", "Roxo", "Amarelo"], "correct_answer": "Verde", "image_path": "assets/quiz/colours/cucumber.jpg"},
+          {"question": "Qual é a cor de um corvo?", "options": ["Preto", "Branco", "Azul", "Verde"], "correct_answer": "Preto", "image_path": "assets/quiz/colours/raven.jpg"},
+          {"question": "Qual é a cor de um pêssego?", "options": ["Laranja", "Azul", "Verde", "Roxo"], "correct_answer": "Laranja", "image_path": "assets/quiz/colours/peach.jpg"}
+        ]
+      },
+      {
+        "name": "Numbers",
+        "questions": [
+          {"question": "Quantos dedos há em uma mão?", "options": ["Quatro", "Cinco", "Seis", "Sete"], "correct_answer": "Cinco", "image_path": null},
+          {"question": "O que vem depois de 3?", "options": ["2", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+          {"question": "Quantos lados tem um triângulo?", "options": ["Três", "Quatro", "Cinco", "Seis"], "correct_answer": "Três", "image_path": null},
+          {"question": "Quanto é 2 + 2?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+          {"question": "Quantas pernas tem uma aranha?", "options": ["Seis", "Oito", "Dez", "Quatro"], "correct_answer": "Oito", "image_path": null},
+          {"question": "O que vem antes de 5?", "options": ["3", "4", "6", "7"], "correct_answer": "4", "image_path": null},
+          {"question": "Quantas rodas tem uma bicicleta?", "options": ["Uma", "Duas", "Três", "Quatro"], "correct_answer": "Duas", "image_path": null},
+          {"question": "Quanto é 5 - 1?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+          {"question": "Quantos dias há em uma semana?", "options": ["Cinco", "Seis", "Sete", "Oito"], "correct_answer": "Sete", "image_path": null},
+          {"question": "Quantos olhos você tem?", "options": ["Um", "Dois", "Três", "Quatro"], "correct_answer": "Dois", "image_path": null},
+          {"question": "O que vem depois de 8?", "options": ["7", "9", "10", "11"], "correct_answer": "9", "image_path": null},
+          {"question": "Quantas pernas tem um cachorro?", "options": ["Duas", "Três", "Quatro", "Cinco"], "correct_answer": "Quatro", "image_path": null},
+          {"question": "Quanto é 3 + 1?", "options": ["2", "3", "4", "5"], "correct_answer": "4", "image_path": null},
+          {"question": "Quantos lados tem um quadrado?", "options": ["Três", "Quatro", "Cinco", "Seis"], "correct_answer": "Quatro", "image_path": null},
+          {"question": "O que vem antes de 10?", "options": ["8", "9", "11", "12"], "correct_answer": "9", "image_path": null},
+          {"question": "Quantas orelhas você tem?", "options": ["Uma", "Duas", "Três", "Quatro"], "correct_answer": "Duas", "image_path": null},
+          {"question": "Quanto é 6 - 2?", "options": ["3", "4", "5", "6"], "correct_answer": "4", "image_path": null},
+          {"question": "Quantas pernas tem um pássaro?", "options": ["Uma", "Duas", "Três", "Quatro"], "correct_answer": "Duas", "image_path": null},
+          {"question": "O que vem depois de 1?", "options": ["0", "2", "3", "4"], "correct_answer": "2", "image_path": null},
+          {"question": "Quantos lados tem um pentágono?", "options": ["Quatro", "Cinco", "Seis", "Sete"], "correct_answer": "Cinco", "image_path": null}
+        ]
+      },
+      {
+        "name": "Family Members",
+        "questions": [
+          {"question": "Quem é o marido da sua mãe?", "options": ["Pai", "Irmão", "Tio", "Avô"], "correct_answer": "Pai", "image_path": null},
+          {"question": "Quem é a mãe do seu pai?", "options": ["Avó", "Irmã", "Tia", "Mãe"], "correct_answer": "Avó", "image_path": null},
+          {"question": "Como você chama o filho da sua mãe?", "options": ["Irmão", "Pai", "Tio", "Avô"], "correct_answer": "Irmão", "image_path": null},
+          {"question": "Quem é a irmã da sua mãe?", "options": ["Tia", "Avó", "Mãe", "Irmã"], "correct_answer": "Tia", "image_path": null},
+          {"question": "Quem é o pai do seu pai?", "options": ["Avô", "Irmão", "Tio", "Pai"], "correct_answer": "Avô", "image_path": null},
+          {"question": "Como você chama a filha do seu pai?", "options": ["Irmã", "Mãe", "Tia", "Avó"], "correct_answer": "Irmã", "image_path": null},
+          {"question": "Quem é a mãe da sua mãe?", "options": ["Avó", "Tia", "Irmã", "Mãe"], "correct_answer": "Avó", "image_path": null},
+          {"question": "Quem é o irmão do seu pai?", "options": ["Tio", "Pai", "Avô", "Irmão"], "correct_answer": "Tio", "image_path": null},
+          {"question": "Como você chama o filho da sua mãe?", "options": ["Irmão", "Irmã", "Pai", "Avô"], "correct_answer": "Irmão", "image_path": null},
+          {"question": "Quem é o marido da sua avó?", "options": ["Avô", "Pai", "Tio", "Irmão"], "correct_answer": "Avô", "image_path": null},
+          {"question": "Quem é a filha da sua mãe?", "options": ["Irmã", "Tia", "Avó", "Mãe"], "correct_answer": "Irmã", "image_path": null},
+          {"question": "Quem é a esposa do seu avô?", "options": ["Avó", "Mãe", "Tia", "Irmã"], "correct_answer": "Avó", "image_path": null},
+          {"question": "Como você chama o filho do seu pai?", "options": ["Irmão", "Pai", "Tio", "Avô"], "correct_answer": "Irmão", "image_path": null},
+          {"question": "Quem é o irmão da sua mãe?", "options": ["Tio", "Pai", "Avô", "Irmão"], "correct_answer": "Tio", "image_path": null},
+          {"question": "Quem é a mãe da sua irmã?", "options": ["Mãe", "Tia", "Avó", "Irmã"], "correct_answer": "Mãe", "image_path": null},
+          {"question": "Quem é o pai do seu irmão?", "options": ["Pai", "Tio", "Avô", "Irmão"], "correct_answer": "Pai", "image_path": null},
+          {"question": "Como você chama a irmã do seu tio?", "options": ["Tia", "Mãe", "Avó", "Irmã"], "correct_answer": "Tia", "image_path": null},
+          {"question": "Quem é a esposa do seu pai?", "options": ["Mãe", "Tia", "Avó", "Irmã"], "correct_answer": "Mãe", "image_path": null},
+          {"question": "Quem é o pai da sua mãe?", "options": ["Avô", "Pai", "Tio", "Irmão"], "correct_answer": "Avô", "image_path": null},
+          {"question": "Como você chama a filha da sua avó?", "options": ["Mãe", "Tia", "Irmã", "Avó"], "correct_answer": "Mãe", "image_path": null}
+        ]
+      },
+      {
+        "name": "Animals",
+        "questions": [
+          {"question": "Qual animal diz 'Au au'?", "options": ["Gato", "Cachorro", "Pássaro", "Peixe"], "correct_answer": "Cachorro", "image_path": null},
+          {"question": "Qual animal diz 'Miau'?", "options": ["Cachorro", "Gato", "Coelho", "Cavalo"], "correct_answer": "Gato", "image_path": null},
+          {"question": "Qual animal vive no mar e tem oito pernas?", "options": ["Polvo", "Tubarão", "Golfinho", "Baleia"], "correct_answer": "Polvo", "image_path": null},
+          {"question": "Qual animal é o mais alto?", "options": ["Elefante", "Girafa", "Leão", "Urso"], "correct_answer": "Girafa", "image_path": null},
+          {"question": "Qual animal é preto e branco e vive na China?", "options": ["Zebra", "Panda", "Pinguim", "Tigre"], "correct_answer": "Panda", "image_path": null},
+          {"question": "Qual animal pode voar?", "options": ["Cachorro", "Gato", "Pássaro", "Peixe"], "correct_answer": "Pássaro", "image_path": null},
+          {"question": "Qual animal é conhecido por sua tromba longa?", "options": ["Elefante", "Girafa", "Leão", "Macaco"], "correct_answer": "Elefante", "image_path": null},
+          {"question": "Qual animal diz 'Muu'?", "options": ["Cavalo", "Vaca", "Ovelha", "Porco"], "correct_answer": "Vaca", "image_path": null},
+          {"question": "Qual animal é pequeno e pula?", "options": ["Coelho", "Rato", "Esquilo", "Hamster"], "correct_answer": "Coelho", "image_path": null},
+          {"question": "Qual animal é o rei da selva?", "options": ["Tigre", "Leão", "Urso", "Lobo"], "correct_answer": "Leão", "image_path": null},
+          {"question": "Qual animal vive na água e tem barbatanas?", "options": ["Peixe", "Crocodilo", "Tartaruga", "Cobra"], "correct_answer": "Peixe", "image_path": null},
+          {"question": "Qual animal tem um pescoço longo e manchas?", "options": ["Girafa", "Elefante", "Zebra", "Guepardo"], "correct_answer": "Girafa", "image_path": null},
+          {"question": "Qual animal diz 'Oinc'?", "options": ["Vaca", "Porco", "Ovelha", "Cavalo"], "correct_answer": "Porco", "image_path": null},
+          {"question": "Qual animal é preto e branco com listras?", "options": ["Panda", "Zebra", "Pinguim", "Dálmata"], "correct_answer": "Zebra", "image_path": null},
+          {"question": "Qual animal é lento e vive em terra?", "options": ["Tartaruga", "Coelho", "Raposa", "Veado"], "correct_answer": "Tartaruga", "image_path": null},
+          {"question": "Qual animal diz 'Relinchar'?", "options": ["Cavalo", "Vaca", "Ovelha", "Porco"], "correct_answer": "Cavalo", "image_path": null},
+          {"question": "Qual animal é pequeno e tem uma cauda peluda?", "options": ["Esquilo", "Rato", "Hamster", "Rato"], "correct_answer": "Esquilo", "image_path": null},
+          {"question": "Qual animal tem uma juba grande?", "options": ["Leão", "Tigre", "Urso", "Lobo"], "correct_answer": "Leão", "image_path": null},
+          {"question": "Qual animal vive no Ártico e é branco?", "options": ["Urso Polar", "Pinguim", "Foca", "Morsa"], "correct_answer": "Urso Polar", "image_path": null},
+          {"question": "Qual animal balança nas árvores?", "options": ["Macaco", "Preguiça", "Coala", "Urso"], "correct_answer": "Macaco", "image_path": null}
+        ]
+      },
+      {
+        "name": "Routines",
+        "questions": [
+          {"question": "O que você faz de manhã para limpar os dentes?", "options": ["Tomar café da manhã", "Escovar os dentes", "Ir para a escola", "Brincar"], "correct_answer": "Escovar os dentes", "image_path": null},
+          {"question": "O que você faz antes de ir para a cama?", "options": ["Almoçar", "Dormir", "Jogar", "Ir para a escola"], "correct_answer": "Dormir", "image_path": null},
+          {"question": "O que você faz na escola?", "options": ["Dormir", "Aprender", "Jantar", "Brincar o dia todo"], "correct_answer": "Aprender", "image_path": null},
+          {"question": "O que você come de manhã?", "options": ["Jantar", "Café da manhã", "Almoço", "Lanche"], "correct_answer": "Café da manhã", "image_path": null},
+          {"question": "O que você faz para limpar as mãos antes de comer?", "options": ["Lavar as mãos", "Brincar", "Ler um livro", "Dormir"], "correct_answer": "Lavar as mãos", "image_path": null},
+          {"question": "O que você faz depois da escola?", "options": ["Ir para a cama", "Fazer lição de casa", "Tomar café da manhã", "Ir para a escola"], "correct_answer": "Fazer lição de casa", "image_path": null},
+          {"question": "O que você come ao meio-dia?", "options": ["Café da manhã", "Almoço", "Jantar", "Lanche"], "correct_answer": "Almoço", "image_path": null},
+          {"question": "O que você faz para se preparar para a escola?", "options": ["Dormir", "Brincar", "Vestir-se", "Jantar"], "correct_answer": "Vestir-se", "image_path": null},
+          {"question": "O que você faz à noite com sua família?", "options": ["Jantar", "Ir para a escola", "Escovar os dentes", "Brincar fora"], "correct_answer": "Jantar", "image_path": null},
+          {"question": "O que você faz para manter seu quarto arrumado?", "options": ["Brincar", "Limpar", "Dormir", "Comer"], "correct_answer": "Limpar", "image_path": null},
+          {"question": "O que você faz de manhã depois de acordar?", "options": ["Ir para a cama", "Arrumar a cama", "Jantar", "Brincar"], "correct_answer": "Arrumar a cama", "image_path": null},
+          {"question": "O que você faz para se manter saudável?", "options": ["Brincar o dia todo", "Comer doces", "Fazer exercício", "Dormir o dia todo"], "correct_answer": "Fazer exercício", "image_path": null},
+          {"question": "O que você faz à noite antes de dormir?", "options": ["Tomar café da manhã", "Ler um livro", "Ir para a escola", "Brincar fora"], "correct_answer": "Ler um livro", "image_path": null},
+          {"question": "O que você faz para chegar à escola?", "options": ["Dormir", "Caminhar", "Almoçar", "Brincar"], "correct_answer": "Caminhar", "image_path": null},
+          {"question": "O que você come depois do almoço?", "options": ["Café da manhã", "Jantar", "Lanche", "Almoço"], "correct_answer": "Lanche", "image_path": null},
+          {"question": "O que você faz para relaxar depois da lição de casa?", "options": ["Brincar", "Dormir", "Ir para a escola", "Tomar café da manhã"], "correct_answer": "Brincar", "image_path": null},
+          {"question": "O que você faz de manhã para se limpar?", "options": ["Tomar banho", "Brincar", "Dormir", "Comer"], "correct_answer": "Tomar banho", "image_path": null},
+          {"question": "O que você faz para ajudar em casa?", "options": ["Brincar", "Arrumar a mesa", "Dormir", "Ir para a escola"], "correct_answer": "Arrumar a mesa", "image_path": null},
+          {"question": "O que você faz depois do jantar?", "options": ["Tomar café da manhã", "Assistir TV", "Ir para a escola", "Brincar fora"], "correct_answer": "Assistir TV", "image_path": null},
+          {"question": "O que você faz para se manter aquecido antes de dormir?", "options": ["Vestir pijama", "Brincar fora", "Almoçar", "Ir para a escola"], "correct_answer": "Vestir pijama", "image_path": null}
+        ]
+      }
+    ]
+  }

@@ -5,7 +5,7 @@ import json
 
 class MemoryGame:
     def __init__(self):
-        # Load memory_data.json from file
+        # Load memory_data.json 
         try:
             with open('memory_data.json', 'r') as f:
                 self.memory_data = json.load(f)
@@ -32,7 +32,7 @@ class MemoryGame:
         self.GRID_SIZE = 6  
         self.TILE_SIZE = 110  # Size of each tile
         self.GRID_X = (settings.WIDTH - self.GRID_SIZE * self.TILE_SIZE) // 2  # Center the grid
-        self.GRID_Y = 80  # Start below the title
+        self.GRID_Y = 80  # Y position of the grid
         self.initialize_game()
 
     def initialize_game(self):
@@ -43,7 +43,7 @@ class MemoryGame:
         tile_items = selected_items * 2  # 12 items x 2 = 24 tiles
         random.shuffle(tile_items)
 
-        # Initialize the 6x6 grid (36 tiles, 12 will be empty/unused)
+        # Initialize the 6x6 grid 
         self.grid = []
         tile_index = 0
         for row in range(self.GRID_SIZE):
@@ -68,7 +68,6 @@ class MemoryGame:
                     })
                     tile_index += 1
                 else:
-                    # Empty tile (no item)
                     grid_row.append({
                         "item": None,
                         "flipped": False,
@@ -83,7 +82,7 @@ class MemoryGame:
             self.grid.append(grid_row)
 
         # Game state
-        self.flipped_tiles = []  # Track currently flipped tiles
+        self.flipped_tiles = []  
         self.feedback = None
         self.feedback_timer = 0
         self.matches_found = 0
@@ -121,32 +120,20 @@ class MemoryGame:
                     pygame.draw.rect(screen, self.BORDER_COLOR, rect, border_radius=10)
                     pygame.draw.rect(screen, color, rect.inflate(-5, -5), border_radius=10)
 
-                    # If flipped or matched, show the "image" (or placeholder) and subtitle
                     if tile["flipped"] or tile["matched"]:
                         # Define the image/placeholder area
                         image_rect = rect.inflate(-10, -10)
                         image_rect.height = self.TILE_SIZE // 1.2
                         image_rect.center = (rect.centerx, rect.centery)
 
-                        # Check if there's an image path; if not, use the colored rectangle
                         if tile["item"]["image_path"] is not None:
                             try:
-                                # Placeholder: Draw a colored rectangle for now
-                                # When you add actual images, replace this with:
                                 image = pygame.image.load(tile["item"]["image_path"]).convert_alpha()
                                 image = pygame.transform.scale(image, (image_rect.width, image_rect.height))
                                 screen.blit(image, image_rect)
-                                # pygame.draw.rect(screen, tile["item"]["color"], image_rect, border_radius=5)
-                                # Add a "Image Placeholder" label for Food and Animals
-                                # if self.levels[self.current_level]["name"] != "Colors":
-                                #     placeholder_text = self.font_small.render("Image Here", True, settings.BLACK)
-                                #     placeholder_rect = placeholder_text.get_rect(center=image_rect.center)
-                                #     screen.blit(placeholder_text, placeholder_rect)
                             except pygame.error:
-                                # Fallback to colored rectangle if image loading fails
                                 pygame.draw.rect(screen, tile["item"]["color"], image_rect, border_radius=5)
                         else:
-                            # For Colors level, use the colored rectangle
                             pygame.draw.rect(screen, tile["item"]["color"], image_rect, border_radius=5)
 
                         # Draw the subtitle (name)
@@ -158,25 +145,17 @@ class MemoryGame:
             if self.feedback:
                 feedback_rect = pygame.Rect(settings.WIDTH // 2 - 150, settings.HEIGHT - 100, 300, 60)
                 feedback_color = self.MATCH_COLOR if "Great job" in self.feedback else self.FLIP_COLOR
-                if feedback_color == self.MATCH_COLOR:
-                    # play correct sound
-                    settings.CORRECT_SOUND.play()
-                else:
-                    # play incorrect sound
-                    settings.WRONG_SOUND.play()
                 pygame.draw.rect(screen, feedback_color, feedback_rect, border_radius=10)
                 pygame.draw.rect(screen, settings.WHITE, feedback_rect.inflate(-5, -5), border_radius=10)
                 feedback_text = self.font_small.render(self.feedback, True, settings.BLACK)
                 feedback_text_rect = feedback_text.get_rect(center=feedback_rect.center)
                 screen.blit(feedback_text, feedback_text_rect)
 
-
-
     def handle_events(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN and not self.game_over:
             mouse_pos = pygame.mouse.get_pos()
             if self.feedback_timer > 0:
-                return  # Don't allow new clicks while feedback is active
+                return  
 
             for row in range(self.GRID_SIZE):
                 for col in range(self.GRID_SIZE):
@@ -200,8 +179,14 @@ class MemoryGame:
                                 self.matches_found += 1
                                 self.feedback = "Great job"
                                 self.flipped_tiles = []  # Reset flipped tiles
+                                # Play correct sound
+                                if settings.SOUND_ON:
+                                    settings.CORRECT_SOUND.play()
                             else:
                                 self.feedback = "Try again"
+                                # Play wrong sound
+                                if settings.SOUND_ON:
+                                    settings.WRONG_SOUND.play()
 
                             self.feedback_timer = settings.FEEDBACK_DURATION
 
@@ -213,7 +198,7 @@ class MemoryGame:
             self.feedback_timer -= 1
             if self.feedback_timer <= 0:
                 self.feedback = None
-                # If the last two flipped tiles didn't match, flip them back
+        
                 if self.flipped_tiles:
                     tile1_pos, tile2_pos = self.flipped_tiles
                     tile1 = self.grid[tile1_pos[0]][tile1_pos[1]]

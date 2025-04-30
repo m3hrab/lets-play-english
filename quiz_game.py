@@ -48,7 +48,7 @@ class QuizGame:
         self.feedback_timer = 0
         self.level_complete = False
         self.option_rects = []
-        self.game_over = False  # Ensure game_over is initialized
+        self.game_over = False  
 
     def wrap_text(self, text, font, max_width):
         """Wrap text to fit within a given width."""
@@ -99,13 +99,12 @@ class QuizGame:
 
             # Display wrapped question
             question_lines = self.wrap_text(self.questions[self.current_question]["question"], self.font_medium, question_box.width - 80)
-            question_height = len(question_lines) * 30  # More spacing for readability
+            question_height = len(question_lines) * 30  
             for i, line in enumerate(question_lines):
                 question_text = self.font_medium.render(line, True, settings.QUESTION_COLOR)
                 question_rect = question_text.get_rect(topleft=(question_box.left + 40, question_box.top + 40 + i * 30))
                 screen.blit(question_text, question_rect)
 
-            # Display image placeholder if the question has an actual image
             if has_image:
                 image_rect = pygame.Rect(65, 187, 205, 205)
                 
@@ -123,7 +122,6 @@ class QuizGame:
                 # image_label = self.font_small.render("Refference Picture", True, settings.BLACK)
                 # screen.blit(image_label, image_label.get_rect(center=image_rect.center))
 
-            # Display options inside the question card with wrapping
             self.option_rects = []
             option_y_start = question_box.top + 40 + question_height + 20
             for i, option in enumerate(self.questions[self.current_question]["shuffled_options"]):
@@ -132,7 +130,7 @@ class QuizGame:
                 wrapped_option = self.wrap_text(option_text, self.font_medium, question_box.width - 80)
                 option_height = len(wrapped_option) * 50
 
-                # Create a rectangle for the option (based on wrapped height)
+                # Create a rectangle for the option
                 option_rect = pygame.Rect(question_box.left + 40, option_y_start, question_box.width - 80, option_height)
                 self.option_rects.append(option_rect)
 
